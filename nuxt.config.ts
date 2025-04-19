@@ -7,5 +7,14 @@ export default defineNuxtConfig({
     },
     ssr: false,
 
-    modules: ['vuetify-nuxt-module', '@pinia/nuxt', '@nuxt/eslint'],
+    modules: [
+        'vuetify-nuxt-module',
+        '@pinia/nuxt',
+        '@nuxt/eslint',
+        'pocketbase-nuxt',
+    ],
+
+    pocketbase: {
+        url: 'https://pocketbase.io', // Your PocketBase URL
+    },
 });
